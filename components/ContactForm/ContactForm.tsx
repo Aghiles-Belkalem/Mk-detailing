@@ -14,7 +14,7 @@ export default function ContactForm() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/mkdetailinggarage@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/mkdetailinggarage.azazga@gmail.com", {
         method: "POST",
         headers: {
           Accept: "application/json",
