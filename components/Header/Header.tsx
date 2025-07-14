@@ -30,7 +30,7 @@ export default function Header() {
     <header className={styles.header}>
       <Link href="/" className={styles.logoContainer} onClick={() => setMenuOpen(false)}>
         <Image
-          src="/IMG-20250710-WA0027-removebg-preview.png"
+          src="/logoMK.png"
           alt="Logo MK Detailing"
           width={40}
           height={40}

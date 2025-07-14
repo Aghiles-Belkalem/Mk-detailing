@@ -1,0 +1,49 @@
+:root {
+  --social-color: #e50914; /* rouge style garage */
+  --social-bg: #1b1b1b;
+  --social-hover: #ff3333;
+}
+
+.socialFooter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: var(--social-bg);
+}
+
+.socialFooter a {
+  color: var(--social-color);
+  font-size: 1.8rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.socialFooter a:hover {
+  color: var(--social-hover);
+  transform: scale(1.2);
+}
+
+.floatingWhatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--social-color);
+  color: white;
+  border-radius: 50%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.floatingWhatsapp:hover {
+  background-color: var(--social-hover);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .socialFooter a {
+    font-size: 1.5rem;
+  }
+}
