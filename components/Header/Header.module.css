@@ -1,0 +1,138 @@
+:root {
+  --color-background: rgba(18, 18, 18, 0.559);
+  --color-primary: #e10600;
+  --color-text: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 56px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0;
+  text-shadow: 0 0 8px var(--color-primary);
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
+}
+
+.burgerLine {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-text);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px var(--color-primary);
+}
+
+.burger[aria-expanded="true"] .burgerLine:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+  box-shadow: 0 0 10px var(--color-primary);
+}
+.burger[aria-expanded="true"] .burgerLine:nth-child(2) {
+  opacity: 0;
+}
+.burger[aria-expanded="true"] .burgerLine:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background-color: var(--color-background);
+  flex-direction: column;
+  padding: 1rem 0;
+  z-index: 1050;
+  box-shadow: 0 4px 12px var(--color-primary);
+  border-top: 2px solid var(--color-primary);
+  backdrop-filter: saturate(180%) blur(6px);
+}
+
+.show {
+  display: flex;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.navList li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navList li a:hover,
+.navList li a:focus {
+  color: var(--color-primary);
+  outline: none;
+  text-shadow: 0 0 8px var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+  .nav {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .navList {
+    margin-top: 0.5rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: none;
+  }
+}
+
+
+
+
+
