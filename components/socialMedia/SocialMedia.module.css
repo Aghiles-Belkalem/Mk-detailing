@@ -1,8 +1,4 @@
-:root {
-  --social-color: #e50914; /* rouge style garage */
-  --social-bg: #1b1b1b;
-  --social-hover: #ff3333;
-}
+
 
 .socialFooter {
   display: flex;

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <SocialMedia/>
-      <p>© {new Date().getFullYear()} MK Detailing. Tous droits réservés.</p>
+      <p className={styles.legalMentions}>© {new Date().getFullYear()} MK Detailing. Tous droits réservés.</p>
     </footer>
   );
 }
