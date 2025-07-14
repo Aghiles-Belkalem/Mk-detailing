@@ -8,7 +8,7 @@ Ce projet offre un design moderne, immersif et premium, inspiré de l’univers 
 
 ## 🌟 Aperçu
 
-![Aperçu MK Detailing Garage](./public/images/cover.jpg)
+![Aperçu MK Detailing Garage](./public//images//cover.png)
 
 ---
 
