@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     "vitres teintées Algérie",
     "correction peinture Algérie"
   ],
-  authors: [{ name: "MK Detailing", url: "https://mkdetailing-dz.com" }],
+  authors: [{ name: "MK Detailing", url: "https://mk-detailing-garageazazga.vercel.app/" }],
   openGraph: {
     title: "MK Detailing Algérie - Expert PPF & Detailing à Azazga",
     description: "Garage à Azazga en Algérie, expert en PPF (film de protection carrosserie), detailing, polissage et correction peinture. Service premium, 100% satisfaction.",
-    url: "https://mkdetailing-dz.com",
+    url: "https://mk-detailing-garageazazga.vercel.app/",
     siteName: "MK Detailing Algérie",
     images: [
       {
-        url: "/faviconeMK.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "MK Detailing - Expert PPF à Azazga Algérie",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/faviconeMK.png",
+    icon: "/favicon.png",
   },
 };
 
